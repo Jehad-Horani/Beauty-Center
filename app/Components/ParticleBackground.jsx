@@ -21,38 +21,18 @@ export default function ParticlesBackground() {
           background: { color: { value: "transparent" } },
           fpsLimit: 60,
           detectRetina: true,
-          interactivity: {
-            events: {
-              onHover: { enable: true, mode: "grab" },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 140,
-                links: {
-                  opacity: 0.8,
-                },
-              },
-            },
-          },
+        
           particles: {
             number: {
-              value: 70,
+              value: 100,
               density: { enable: true, area: 1000 },
             },
             shape: {
-              type: "image",
-              image: [
-                {
-                  src: "/nail.png", // تأكد من أن الصورة في مجلد public
-                  width: 30,
-                  height: 30,
-                },
-              ],
+              type: "circle",  // هنا غيرنا من image إلى circle
             },
             opacity: {
-              value: 0.8,
-              random: { enable: true, minimumValue: 0.5 },
+              value: 0.2,
+              random: { enable: true, minimumValue: 0.1 },
               anim: {
                 enable: true,
                 speed: 0.2,
@@ -61,12 +41,12 @@ export default function ParticlesBackground() {
               },
             },
             size: {
-              value: 22,
-              random: { enable: true, minimumValue: 12 },
+              value: 3,
+              random: { enable: true, minimumValue: 2 },
               anim: {
                 enable: true,
                 speed: 2,
-                size_min: 12,
+                size_min: 2,
                 sync: false,
               },
             },
@@ -79,14 +59,7 @@ export default function ParticlesBackground() {
               outModes: { default: "out" },
               bounce: false,
             },
-            links: {
-              enable: true,
-              distance: 120,
-              color: "#ffffff88",
-              opacity: 0.2,
-              width: 1,
-              triangles: { enable: false },
-            },
+        
           },
         }}
       />

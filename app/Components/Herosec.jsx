@@ -6,45 +6,59 @@ import AOS from "aos";
 import { useEffect } from "react";
 import BeautyParticles from "./ParticleBackground";
 
-
-
 export default function Hero() {
-    useEffect(() => {
-      AOS.init({
-        duration: 1000,      // مدة الأنيميشن
-        once: true,          // تظهر مرة واحدة فقط
-        easing: "ease-in-out",
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
-    <main className=" bg-red-950 text-white flex mt-[-40px] items-center justify-center relative pt-10 overflow-visible bg-[length:100%_100%]">
-        <BeautyParticles/>
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2  gap-12 max-md:gap-1 py-10 items-center">
+    <main className="relative overflow-hidden bg-gradient-to-b from-[#0f0f0f] via-[#1a1a1a] to-[#0a0a0a] text-white">
+      <BeautyParticles />
+
+      {/* الخلفية الذهبية خلف الصورة */}
+      <div className="absolute right-[10%] top-[10%] w-[600px] h-[600px] bg-[#D89F43] blur-[100px] opacity-30 rounded-full z-0 pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 py-20 px-6 items-center">
         {/* LEFT TEXT SECTION */}
-        <div className="space-y-6 p-5 max-md:flex max-md:justify-around max-md:items-center max-md:flex-col">
-          <h1 data-aos="fade-down-right" className="text-4xl md:text-4xl font-extrabold leading-tight text-[#D89F43] animate-fade-in">
+        <div className="space-y-6 max-md:text-center">
+          <h1
+            data-aos="fade-down-right"
+            className="text-4xl md:text-5xl font-extrabold leading-tight text-[#D89F43]"
+          >
             Reveal Your True Beauty
           </h1>
-          <p data-aos="zoom-in" className="text-gray-300 text-lg animate-fade-in-delay">
+          <p
+            data-aos="zoom-in"
+            className="text-gray-300 tracking-wide text-lg md:text-xl max-w-lg"
+          >
             At Umayma Medical Center, we provide expert cosmetic treatments
             tailored to your needs in a luxurious and professional environment.
           </p>
-          <button data-aos="fade-right" className="bg-[#D89F43] hover:bg-[#d89f43c7] cursor-pointer text-white px-6 py-3 rounded-full transition duration-300 animate-fade-in-delay">
+          <button
+            data-aos="fade-right"
+            className="bg-[#D89F43] hover:bg-[#d89f43c7] font-bold text-white px-6 py-3 rounded-full transition duration-300"
+          >
             See our Services
           </button>
-           
         </div>
 
         {/* RIGHT IMAGE SECTION */}
-        <div className="flex justify-center animate-fade-in-right ">
+        <div
+          className="flex justify-center relative"
+          data-aos="fade-down"
+        >
           <Image
-            src="/hero-img.jpg" // ضع صورتك في public/hero-image.jpg
+            src="/hero-img.jpg"
             alt="Beauty Treatment"
             width={500}
             height={500}
-            data-aos="fade-down"
-            className="rounded-3xl  shadow-2xl relative mx-10 bottom-[-80px] object-cover max-h-[500px]"
+            className="rounded-3xl shadow-2xl object-cover max-h-[500px] z-10 relative"
           />
+          
         </div>
       </div>
     </main>

@@ -14,16 +14,15 @@ export default function Navbar() {
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Booking", href: "/booking" },
-  { name: "Contact", href: "/contact" },
+  { name: "Booking", href: "https://wa.me/962797043538" },
+  { name: "Contact", href: "/#contact" },
   ];
 
   return (
     <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-xs shadow-2xl rounded-b-3xl  py-3 mx-0.5">
       <nav className="max-w-screen-xl mx-auto flex items-center justify-between h-16 px-4">
         {/* Logo */}
-        <Link href="#home">
+        <Link href="/">
           <Image
             src="/white-logo.png"
             alt="MEDROOTS Logo"
