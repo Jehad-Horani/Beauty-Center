@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import WhatsappButton from "./Components/WhatsappButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <Navbar/>
         {children}
         <Footer/>
+        <WhatsappButton/>
         <Analytics />
       </body>
     </html>

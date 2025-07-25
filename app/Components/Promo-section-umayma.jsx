@@ -16,19 +16,19 @@ export default function PromoSection() {
       image: "/2.png",
       title: "جلسات الليزر",
       subtitle: "باحدث الاجهزة لبشرة ناعمة ",
-      whatsapp: "0797043528",
+      whatsapp: "0797043538",
     },
     {
       image: "/3.png",
       title: "اسألي عن بكج",
       subtitle: "التقشير الكيميائي (للوجه أو الجسم)",
-      whatsapp: "0797043528",
+      whatsapp: "0797043538",
     },
     {
       image: "/1.png",
       title: "Get Your Dream Body",
       subtitle: "مع مركز أميمة",
-      whatsapp: "0797043528",
+      whatsapp: "0797043538",
     },
   ];
 
