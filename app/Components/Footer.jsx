@@ -84,7 +84,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-center text-sm text-gray-500 mt-8 border-t border-[#D89F43]/20 pt-4">
-        © {new Date().getFullYear()} Umayma Medical Center. All rights reserved.
+        © {new Date().getFullYear()} JHWebDev. All rights reserved.
       </div>
     </footer>
   );
