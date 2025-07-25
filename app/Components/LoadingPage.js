@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function LoadingPage() {
   return (
@@ -10,9 +11,16 @@ export default function LoadingPage() {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
-        className="w-20 h-20 rounded-full bg-[#D89F43] flex items-center justify-center shadow-lg"
+        className=" rounded-full  flex items-center justify-center "
       >
-        <span className="text-3xl font-bold text-[#1f1410]">UMC</span>
+            <Image
+                  src="/white-logo.png"
+                  alt=" Logo"
+                  width={200}
+                  height={200}
+                  className="object-contain"
+                  data-aos="zoom-in"
+                />
       </motion.div>
 
       {/* Loading Text */}
@@ -20,7 +28,7 @@ export default function LoadingPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1, repeat: Infinity, repeatType: "reverse" }}
-        className="mt-6 text-xl text-gray-300 tracking-wide"
+        className="mt-6 text-2xl text-gray-300 tracking-wide"
       >
         Loading...
       </motion.p>

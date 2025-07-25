@@ -25,7 +25,7 @@ export default function Navbar() {
         <Link href="/">
           <Image
             src="/white-logo.png"
-            alt="MEDROOTS Logo"
+            alt=" Logo"
             width={100}
             height={40}
             className="object-contain"
