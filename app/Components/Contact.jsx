@@ -48,8 +48,8 @@ export default function ContactSection() {
                     </div>
 
                     <div className="flex space-x-5 mt-4">
-                        <a href="#" className="text-2xl hover:text-[#EFE37A] transition"><FaFacebookF /></a>
-                        <a href="#" className="text-2xl hover:text-[#EFE37A] transition"><FaInstagram /></a>
+                        <a href="https://www.facebook.com/share/19neRGfzbA/?mibextid=wwXIfr" className="text-2xl hover:text-[#EFE37A] transition"><FaFacebookF /></a>
+                        <a href="https://www.instagram.com/umaima_medical_center?igsh=bHlvY2N2dzF4cnV5" className="text-2xl hover:text-[#EFE37A] transition"><FaInstagram /></a>
                         <a href="https://wa.me/962797043538" target="_blank" className="text-2xl hover:text-[#EFE37A] transition"><FaWhatsapp /></a>
                     </div>
                 </div>
