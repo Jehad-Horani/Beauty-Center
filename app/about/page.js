@@ -1,24 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import LoadingPage from "../Components/LoadingPage";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function AboutPage() {
-  const [loading, setLoading] = useState(true);
-   const [query, setQuery] = useState("");
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-
-      useEffect(() => {
-      const timer = setTimeout(() => setLoading(false), 2000); // وقت اللودينج
-      return () => clearTimeout(timer);
-    }, []);
-
-     if (loading) return <LoadingPage />;
+  
     
   return (
     <main className="bg-gradient-to-b from-[#2e1c11] via-[#1f1410] to-[#0c0907] text-white min-h-screen pb-24 px-6">
