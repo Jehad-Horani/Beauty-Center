@@ -19,7 +19,27 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Umayma Medical Center",
-  description: "Beauty Center built with Next.js & Tailwind from JHWebDev مركز تجميل بالاردن, ابر فيلر , الاردن",
+  description:
+    "Umayma Medical Center in Jordan offers expert hair restoration, facial rejuvenation, dental aesthetics, Botox, fillers, and more. Trusted by thousands for over 7 years.",
+  keywords:
+    "Umayma Medical Center, Hair Transplant Jordan, Botox, Fillers, Dental Implants, Skin Care Jordan, Aesthetic Clinic Jordan",
+  openGraph: {
+    title: "Umayma Medical Center | Trusted Aesthetic & Medical Care in Jordan",
+    description:
+      "Leading clinic for hair transplant, dental aesthetics, skin care, Botox & fillers in Jordan. 7+ years of trusted medical expertise.",
+    url: "https://your-website-url.com",
+    siteName: "Umayma Medical Center",
+    images: [
+      {
+        url: "/white-logo.png", 
+        width: 1200,
+        height: 630,
+        alt: "Umayma Medical Center Jordan",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
