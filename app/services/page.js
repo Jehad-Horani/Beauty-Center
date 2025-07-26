@@ -13,7 +13,7 @@ const SERVICES = [
     title: "General Medicine & Primary Care",
     description:
       "Comprehensive healthcare for chronic disease management, elderly care, routine checkups, wound stitching, IV therapies, and physiotherapy.",
-    img: "/body.jpg",
+    img: "/MEDE.jpg",
     subServices: [
       "Chronic Disease Follow-up (Diabetes, Hypertension, Heart Conditions)",
       "Elderly & Home Care",
@@ -128,6 +128,22 @@ const SERVICES = [
       "Facial Cupping",
       "Sports Recovery Cupping",
       "Detox Cupping Therapy",
+    ],
+  },
+    {
+    id: 9,
+    title: "Botox & Fillers",
+    description:
+      "Enhance your natural beauty with safe and professional Botox and filler treatments.",
+    img: "/feeler.jpg",
+    subServices: [
+      "Lip Fillers",
+      "Cheek Fillers",
+      "Jawline Contouring",
+      "Under-eye Fillers",
+      "Botox for Wrinkles",
+      "Masseter Botox (Jaw Slimming)",
+      "Forehead & Frown Lines Botox",
     ],
   },
 ];
