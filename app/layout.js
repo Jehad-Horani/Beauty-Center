@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "Umayma Medical Center",
     images: [
       {
-        url: "/white-logo.png", 
+        url: "/favicon.png", 
         width: 1200,
         height: 630,
         alt: "Umayma Medical Center Jordan",

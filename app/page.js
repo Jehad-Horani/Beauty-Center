@@ -51,7 +51,7 @@ export default function Home() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://your-website-url.com" />
-        <meta property="og:image" content="/white-logo.png" />
+        <meta property="og:image" content="/favicon.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
