@@ -6,59 +6,106 @@ import "aos/dist/aos.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 
+
 const SERVICES = [
   {
     id: 1,
-    title: "Hair Transplant & Restoration",
+    title: "General Medicine & Primary Care",
     description:
-      "State-of-the-art hair transplant and restoration solutions for natural, lasting results.",
-    img: "/hear.jpg",
+      "Comprehensive healthcare for chronic disease management, elderly care, routine checkups, wound stitching, IV therapies, and physiotherapy.",
+    img: "/body.jpg",
     subServices: [
-      "FUE Hair Transplant",
-      "DHI Hair Transplant",
-      "Beard Transplant",
-      "Eyebrow Transplant",
-      "PRP Hair Therapy",
-      "Scalp Micropigmentation",
+      "Chronic Disease Follow-up (Diabetes, Hypertension, Heart Conditions)",
+      "Elderly & Home Care",
+      "Routine Medical Checkups",
+      "Stitches (Cosmetic & Standard)",
+      "Blood Tests & IV Therapy",
+      "Burns Treatment",
+      "Physiotherapy Sessions",
     ],
   },
   {
     id: 2,
-    title: "Facial Rejuvenation & Skin Care",
+    title: "Telehealth & Virtual Consultations",
     description:
-      "Advanced treatments to achieve youthful, glowing, and healthy skin.",
-    img: "/face.jpg",
+      "Online medical consultations for chronic patients, elderly, and those seeking convenient healthcare from home.",
+    img: "/telem.jpg",
     subServices: [
-      "HydraFacial",
-      "Microneedling",
-      "Chemical Peels",
-      "Carbon Laser Peel",
-      "Mesotherapy",
-      "Skin Tightening RF",
-      "Dark Circle Treatment",
+      "Virtual Follow-ups for Chronic Diseases",
+      "Elderly Care via Telehealth",
+      "Online Medical Consultation",
+      "Prescription Renewals",
+      "Remote Health Monitoring",
     ],
   },
   {
     id: 3,
-    title: "Botox & Fillers",
+    title: "Dental Aesthetics",
     description:
-      "Enhance your natural beauty with safe and professional Botox and filler treatments.",
-    img: "/feeler.jpg",
+      "Transform your smile with advanced dental implants, veneers, root canal treatment, braces, and whitening.",
+    img: "/teeth.jpg",
     subServices: [
-      "Lip Fillers",
-      "Cheek Fillers",
-      "Jawline Contouring",
-      "Under-eye Fillers",
-      "Botox for Wrinkles",
-      "Masseter Botox (Jaw Slimming)",
-      "Forehead & Frown Lines Botox",
+      "Teeth Whitening",
+      "Hollywood Smile (Veneers, Zircon Crowns)",
+      "Dental Implants",
+      "Braces & Invisalign",
+      "Root Canal Treatment",
+      "Gum Contouring",
+      "Smile Makeover Packages",
     ],
   },
   {
     id: 4,
+    title: "Facial Rejuvenation & Skin Care",
+    description:
+      "Professional Botox, fillers, scar & pigmentation treatments, HIFU/Endolift lifting, and advanced weight loss programs.",
+    img: "/face.jpg",
+    subServices: [
+      "Botox for Wrinkles & Face Slimming",
+      "Lip Fillers (Russian, Volume Lift)",
+      "Scar & Pigmentation Treatments",
+      "HIFU & Endolift Face Lifting",
+      "Mesotherapy & PRP",
+      "Carbon Laser Peel",
+      "Skin Tightening RF",
+    ],
+  },
+  {
+    id: 5,
+    title: "Hair Transplant & Restoration",
+    description:
+      "Cutting-edge solutions for hair loss: advanced hair transplant, Regenera injection, exosome therapy, and hair fillers.",
+    img: "/hear.jpg",
+    subServices: [
+      "FUE Hair Transplant",
+      "DHI Hair Transplant",
+      "Beard & Eyebrow Transplant",
+      "PRP Hair Therapy",
+      "Hair Filler Treatments",
+      "Regenera Injection",
+      "Exosome Therapy",
+    ],
+  },
+  {
+    id: 6,
+    title: "Body Contouring & Slimming",
+    description:
+      "Non-surgical body shaping treatments for fat reduction and muscle toning.",
+    img: "/body.jpg",
+    subServices: [
+      "Cryolipolysis (Fat Freezing)",
+      "RF Body Tightening",
+      "Cellulite Reduction",
+      "Ultrasound Cavitation",
+      "EMSculpt Muscle Toning",
+      "Weight Loss Programs",
+    ],
+  },
+  {
+    id: 7,
     title: "Laser Treatments",
     description:
-      "Effective and safe laser treatments for hair removal, skin improvement, and more.",
+      "Safe and effective laser solutions for hair removal, skin rejuvenation, and more.",
     img: "/laser.jpg",
     subServices: [
       "Full Body Laser Hair Removal",
@@ -70,25 +117,10 @@ const SERVICES = [
     ],
   },
   {
-    id: 5,
-    title: "Dental Aesthetics",
-    description:
-      "Transform your smile with advanced cosmetic and restorative dental treatments.",
-    img: "/teeth.jpg",
-    subServices: [
-      "Teeth Whitening",
-      "Hollywood Smile (Veneers)",
-      "Dental Implants",
-      "Braces & Invisalign",
-      "Gum Contouring",
-      "Smile Makeover",
-    ],
-  },
-  {
-    id: 6,
+    id: 8,
     title: "Cupping Therapy (Hijama)",
     description:
-      "Improve circulation, detoxify your body, and relieve pain naturally.",
+      "Improve blood circulation, detoxify your body, and enhance recovery naturally.",
     img: "/Hijama.jpg",
     subServices: [
       "Dry Cupping",
@@ -98,29 +130,17 @@ const SERVICES = [
       "Detox Cupping Therapy",
     ],
   },
-  {
-    id: 7,
-    title: "Body Contouring & Slimming",
-    description:
-      "Non-surgical body shaping treatments for a toned and sculpted figure.",
-    img: "/body.jpg",
-    subServices: [
-      "Cryolipolysis (Fat Freezing)",
-      "RF Body Tightening",
-      "Cellulite Reduction",
-      "Ultrasound Cavitation",
-      "EMSculpt Muscle Toning",
-    ],
-  },
 ];
+
+
 
 
 export default function ServicesPage() {
 
-    const [query, setQuery] = useState("");
-    const [expandedId, setExpandedId] = useState(null);
-    const [filtered, setFiltered] = useState(SERVICES);
-  
+  const [query, setQuery] = useState("");
+  const [expandedId, setExpandedId] = useState(null);
+  const [filtered, setFiltered] = useState(SERVICES);
+
 
 
 
@@ -149,7 +169,24 @@ export default function ServicesPage() {
   };
   return (
     <main className="bg-gradient-to-b from-[#2e1c11] via-[#1f1410] to-[#0c0907] min-h-screen text-white pb-24">
-      
+
+      <div className="sr-only">
+        🌟 مركز أميمة الطبي – الوجهة المتكاملة للرعاية الطبية والتجميل في الأردن 🌟
+
+        7 سنوات من التميّز تحت إشراف الدكتور صهيب الصمادي، طبيب جراحة عظام ذو خبرة واسعة في وزارة الصحة، مع فريق طبي متخصص لتلبية كل احتياجاتك الصحية والتجميلية.
+
+        🔹 قسم الطب العام والرعاية الأولية: متابعة الأمراض المزمنة، كبار السن، الفحوصات الدورية، العلاج الطبيعي، خياطة جراحية، خدمات عن بُعد.
+
+        🔹 قسم الأسنان: زراعة الأسنان، تلبيسات زيركون وبنيرز، علاج العصب، تقويم وتبييض الأسنان.
+
+        🔹 قسم التجميل والعناية بالبشرة: بوتوكس وفيلر، رفع وتكبير الشفاه، شد الوجه بأحدث الأجهزة، علاج التصبغات والندبات، برامج نحت الجسم.
+
+        🔹 قسم زراعة الشعر: زراعة دقيقة، حقن الريجينيرا والإكزوسوم، فيلر الشعر، علاج التساقط.
+
+        🔹 الاستشارات عن بُعد (Telehealth): لمتابعة الأمراض المزمنة وكبار السن بكل سهولة.
+
+        أميمة الطبي... لأن صحتك وجمالك في أيدٍ أمينة.
+      </div>
 
 
       {/* Header */}

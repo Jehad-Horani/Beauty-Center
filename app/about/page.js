@@ -1,25 +1,23 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function AboutPage() {
-
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  
-    
   return (
     <main className="bg-gradient-to-b from-[#2e1c11] via-[#1f1410] to-[#0c0907] text-white min-h-screen pb-24 px-6">
-      {/* Background blur circles */}
-      <div className="absolute top-[-120px] left-[8%] w-80 h-80 bg-[#D89F43] opacity-20 blur-3xl rounded-full -z-10"></div>
-      <div className="absolute bottom-[-140px] right-[7%] w-[28rem] h-[28rem] bg-[#EFE37A] opacity-10 blur-2xl rounded-full -z-10"></div>
+      
+      {/* Hidden Arabic SEO Text */}
+      <div className="sr-only">
+        مركز أميمة الطبي – خبرة ثقة نتائج. منذ أكثر من سبع سنوات، تأسس مركز أميمة الطبي بإدارة الدكتور صهيب الصمادي، طبيب جراحة العظام والمقيم الجراحي السابق في وزارة الصحة الأردنية، ليكون وجهة متكاملة للرعاية الطبية المتخصصة والتجميلية. يضم المركز عدة أقسام تقدم خدمات طبية عالية الجودة: قسم الطب العام، قسم الأسنان، قسم التجميل والعناية بالبشرة، قسم زراعة الشعر.
+      </div>
 
-      {/* Page Header */}
+      {/* Header */}
       <section className="max-w-6xl mx-auto text-center py-20">
         <h1
           data-aos="fade-down"
@@ -31,13 +29,16 @@ export default function AboutPage() {
           data-aos="fade-up"
           className="max-w-3xl mx-auto text-gray-300 text-lg md:text-xl leading-relaxed"
         >
-          Where modern aesthetic innovation meets timeless elegance. Our
-          mission is to enhance your natural beauty while prioritizing your
-          health, confidence, and well-being.
+          For over 7 years, Umayma Medical Center has been a trusted destination
+          for advanced medical and aesthetic care. Founded and led by{" "}
+          <span className="text-[#D89F43] font-semibold">Dr. Suhaib Al-Samadi</span>,
+          a former orthopedic surgeon and MOH surgical resident in Jordan, our
+          center combines expertise, innovation, and care to provide outstanding
+          results.
         </p>
       </section>
 
-      {/* Our Mission Section */}
+      {/* Mission */}
       <section className="max-w-5xl mx-auto my-16 md:my-24">
         <div
           data-aos="fade-right"
@@ -47,28 +48,29 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-            At Umayma Medical Center, our mission is to empower every client to
-            shine with confidence and grace. We combine cutting-edge medical
-            techniques with personalized care, ensuring a unique and transformative
-            experience tailored just for you.
+            At Umayma Medical Center, our mission is to deliver top-quality
+            healthcare and aesthetic treatments while ensuring the trust, comfort,
+            and satisfaction of every patient. We provide specialized services in
+            general medicine, dental care, advanced cosmetic procedures, and
+            hair restoration.
           </p>
         </div>
       </section>
 
-      {/* Our Services Section */}
+      {/* Departments */}
       <section className="max-w-6xl mx-auto my-16 md:my-24">
         <h2
           data-aos="fade-up"
           className="text-3xl md:text-4xl font-semibold text-[#EFE37A] text-center mb-12"
         >
-          Our Services
+          Our Main Departments
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              title: "Advanced Hair Treatments",
+              title: "General Medicine",
               description:
-                "From hair restoration to revitalization, our expert team offers cutting-edge solutions tailored to your needs.",
+                "Comprehensive care for elderly and chronic patients: routine checkups, wound stitching (cosmetic & standard), IV therapies, burns treatment, and physiotherapy.",
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,18 +80,14 @@ export default function AboutPage() {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 20c4.418 0 8-4 8-9 0-2.21-1.343-4-3-4s-3 1.79-3 4c0 1.104-.896 2-2 2s-2-.896-2-2c0-2.21-1.343-4-3-4s-3 1.79-3 4c0 5 3.582 9 8 9z"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v8m-4-4h8M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               ),
             },
             {
-              title: "Facial Rejuvenation",
+              title: "Dental Care",
               description:
-                "Experience natural, youthful skin with our range of aesthetic facial treatments and therapies.",
+                "Advanced dental services including veneers, crowns (Zircon), root canal treatment, dental implants, braces, and teeth whitening.",
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,23 +97,15 @@ export default function AboutPage() {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 12c2.28 0 4-1.72 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 20v-1a6 6 0 0112 0v1"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 14s1-2 4-2 4 2 4 2v4H8v-4z" />
                 </svg>
               ),
             },
             {
-              title: "Dental Aesthetics",
+              title: "Aesthetic & Skin Care",
               description:
-                "Brighten your smile with our comprehensive dental care and cosmetic treatments.",
+                "Professional cosmetic treatments including Botox, fillers, lip enhancement, pigmentation & scar treatments, weight loss programs, and facial lifting (HIFU, Endolift).",
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,16 +115,25 @@ export default function AboutPage() {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8 14s1-2 4-2 4 2 4 2v4H8v-4z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 10h6v4H9z"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 12c2.28 0 4-1.72 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 20v-1a6 6 0 0112 0v1" />
+                </svg>
+              ),
+            },
+            {
+              title: "Hair Transplant & Regeneration",
+              description:
+                "Innovative solutions for hair loss: advanced hair transplant, Regenera injection, hair fillers, and exosome therapy.",
+              icon: (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-12 w-12 text-[#D89F43] mb-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 20c4.418 0 8-4 8-9 0-2.21-1.343-4-3-4s-3 1.79-3 4c0 1.104-.896 2-2 2s-2-.896-2-2c0-2.21-1.343-4-3-4s-3 1.79-3 4c0 5 3.582 9 8 9z" />
                 </svg>
               ),
             },
@@ -146,14 +145,16 @@ export default function AboutPage() {
               className="bg-[#3c2a14] rounded-xl p-8 shadow-md border border-[#D89F43]/30 flex flex-col items-center text-center"
             >
               {icon}
-              <h3 className="text-2xl font-semibold mb-3">{title}</h3>
+              <h3 className="text-2xl font-semibold text-[#EFE37A] mb-3">
+                {title}
+              </h3>
               <p className="text-gray-300 leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team */}
       <section className="max-w-6xl mx-auto my-16 md:my-24">
         <h2
           data-aos="fade-up"
@@ -166,14 +167,14 @@ export default function AboutPage() {
             {
               name: "Dr. Lina Al-Salem",
               role: "Chief Aesthetician",
-              img: "/jehad.png", // استبدل الصور بملفاتك داخل مجلد public/team
-              bio: "Specializing in facial rejuvenation with over 10 years of experience.",
+              img: "/jehad.png",
+              bio: "Specialist in facial rejuvenation with 10+ years of experience.",
             },
             {
               name: "Dr. Ahmad Khatib",
               role: "Hair Specialist",
               img: "/jehad.png",
-              bio: "Expert in hair restoration and scalp treatments.",
+              bio: "Expert in advanced hair restoration techniques.",
             },
             {
               name: "Dr. Sara Mansour",
@@ -197,7 +198,7 @@ export default function AboutPage() {
               <img
                 src={img}
                 alt={name}
-                className="w-32   object-cover mb-4 "
+                className="w-32 object-cover mb-4"
                 loading="lazy"
               />
               <h3 className="text-xl font-semibold text-[#EFE37A]">{name}</h3>
@@ -208,7 +209,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials */}
       <section className="max-w-5xl mx-auto my-16 md:my-24">
         <h2
           data-aos="fade-up"
@@ -264,8 +265,6 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-
-   
     </main>
   );
 }
