@@ -11,7 +11,7 @@ export default function AboutPage() {
 
   return (
     <main className="bg-gradient-to-b from-[#2e1c11] via-[#1f1410] to-[#0c0907] text-white min-h-screen pb-24 px-6">
-      
+
       {/* Hidden Arabic SEO Text */}
       <div className="sr-only">
         مركز أميمة الطبي – خبرة ثقة نتائج. منذ أكثر من سبع سنوات، تأسس مركز أميمة الطبي بإدارة الدكتور صهيب الصمادي، طبيب جراحة العظام والمقيم الجراحي السابق في وزارة الصحة الأردنية، ليكون وجهة متكاملة للرعاية الطبية المتخصصة والتجميلية. يضم المركز عدة أقسام تقدم خدمات طبية عالية الجودة: قسم الطب العام، قسم الأسنان، قسم التجميل والعناية بالبشرة، قسم زراعة الشعر.
@@ -165,28 +165,28 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {[
             {
-              name: "Dr. Lina Al-Salem",
-              role: "Chief Aesthetician",
-              img: "/jehad.png",
-              bio: "Specialist in facial rejuvenation with 10+ years of experience.",
+              name: "Dr. Ashraf Al-Baoul",
+              role: "Anesthesia Resident",
+              img: "/ashraf.png",
+              bio: "Specialized in anesthesia to ensure patient comfort and safety.",
             },
             {
-              name: "Dr. Ahmad Khatib",
-              role: "Hair Specialist",
-              img: "/jehad.png",
-              bio: "Expert in advanced hair restoration techniques.",
+              name: "Dr. Sohaib Al-Samadi",
+              role: "Orthopedic and General Surgeon",
+              img: "/suhaip.png",
+              bio: "Experienced in orthopedic and general surgical procedures.",
             },
             {
-              name: "Dr. Sara Mansour",
-              role: "Dental Care Expert",
-              img: "/jehad.png",
-              bio: "Dedicated to creating beautiful and healthy smiles.",
+              name: "Dr. Mohammed Al-Samadi",
+              role: "General and Plastic Surgeon",
+              img: "/moh.png",
+              bio: "Expert in both general and plastic surgery to enhance patient care.",
             },
             {
-              name: "Dr. Omar Hamdan",
-              role: "Medical Consultant",
-              img: "/jehad.png",
-              bio: "Ensuring the highest standards of medical safety and care.",
+              name: "Dr. Abdul Rahman Hashem",
+              role: "Dentist",
+              img: "/abed.png",
+              bio: "Providing comprehensive dental care for healthy, confident smiles.",
             },
           ].map(({ name, role, img, bio }, i) => (
             <div

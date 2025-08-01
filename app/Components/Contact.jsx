@@ -34,10 +34,10 @@ export default function ContactSection() {
                             <FaPhone /> <span>0797043538</span>
                         </a>
                         <a
-                            href="mailto:info@umayma-center.com"
+                            href="mailto:umayma.center@gmail.com"
                             className="flex items-center space-x-3 text-lg hover:text-[#D89F43] transition"
                         >
-                            <FaEnvelope /> <span>info@umayma-center.com</span>
+                            <FaEnvelope /> <span>umayma.center@gmail.com</span>
                         </a>
                     </div>
 
