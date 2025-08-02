@@ -171,7 +171,7 @@ export default function AboutPage() {
               bio: "Expert in both general and plastic surgery to enhance patient care.",
             },
             {
-              name: "Dr. Sohaib Al-Samadi",
+              name: "Dr. Suhaib Al-Samadi",
               role: "Orthopedic and General Surgeon",
               img: "/suhaip.png",
               bio: "Experienced in orthopedic and general surgical procedures.",
