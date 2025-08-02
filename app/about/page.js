@@ -165,10 +165,10 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {[
             {
-              name: "Dr. Ashraf Al-Baoul",
-              role: "Anesthesia Resident",
-              img: "/ashraf.png",
-              bio: "Specialized in anesthesia to ensure patient comfort and safety.",
+              name: "Dr. Mohammed Al-Samadi",
+              role: "General and Plastic Surgeon",
+              img: "/moh.png",
+              bio: "Expert in both general and plastic surgery to enhance patient care.",
             },
             {
               name: "Dr. Sohaib Al-Samadi",
@@ -177,16 +177,29 @@ export default function AboutPage() {
               bio: "Experienced in orthopedic and general surgical procedures.",
             },
             {
-              name: "Dr. Mohammed Al-Samadi",
-              role: "General and Plastic Surgeon",
-              img: "/moh.png",
-              bio: "Expert in both general and plastic surgery to enhance patient care.",
+              name: "Dr. Ashraf Al-Baoul",
+              role: "Anesthesia Resident",
+              img: "/ashraf.png",
+              bio: "Specialized in anesthesia to ensure patient comfort and safety.",
             },
             {
               name: "Dr. Abdul Rahman Hashem",
               role: "Dentist",
               img: "/abed.png",
               bio: "Providing comprehensive dental care for healthy, confident smiles.",
+            },
+       
+            {
+              name: "Zain Roro",
+              role: "Nurse",
+              img: "/zain.png",
+              bio: "Dedicated nurse providing compassionate and professional patient care.",
+            },
+            {
+              name: "Farah Mustafa",
+              role: "Nurse",
+              img: "/farah.png",
+              bio: "Committed to supporting patients with care and empathy in every step.",
             },
           ].map(({ name, role, img, bio }, i) => (
             <div
@@ -198,7 +211,7 @@ export default function AboutPage() {
               <img
                 src={img}
                 alt={name}
-                className="w-32 object-cover mb-4"
+                className="w-32 h-[200px] object-cover mb-4"
                 loading="lazy"
               />
               <h3 className="text-xl font-semibold text-[#EFE37A]">{name}</h3>
