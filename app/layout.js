@@ -18,27 +18,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Umaima Medical Center",
+  title: 'Umaima Medical Center',
   description:
-    "Umaima Medical Center in Jordan offers expert hair restoration, facial rejuvenation, dental aesthetics, Botox, fillers, and more. Trusted by thousands for over 7 years.",
-  keywords:
-    "Umaima Medical Center, Hair Transplant Jordan, Botox, Fillers, Dental Implants, Skin Care Jordan, Aesthetic Clinic Jordan",
+    'Umaima Medical Center in Jordan: Hair transplantation, dental aesthetics, fillers, Botox, laser treatments, weight loss solutions, and home healthcare services.',
+  metadataBase: new URL('https://www.umaima-medical-center.com'),
   openGraph: {
-    title: "Umaima Medical Center | Trusted Aesthetic & Medical Care in Jordan",
+    title: 'Umaima Medical Center',
     description:
-      "Leading clinic for hair transplant, dental aesthetics, skin care, Botox & fillers in Jordan. 7+ years of trusted medical expertise.",
-    url: "https://your-website-url.com",
-    siteName: "Umaima Medical Center",
+      'Expert in hair restoration, dental aesthetics, Botox, fillers, laser treatments, weight loss, and home healthcare services in Jordan.',
+    url: '/',
+    siteName: 'Umaima Medical Center',
     images: [
       {
-        url: "/favicon.png", 
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "Umaima Medical Center Jordan",
+        alt: 'Umaima Medical Center – Confidence and Care',
       },
     ],
-    locale: "en_US",
-    type: "website",
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Umaima Medical Center',
+    description:
+      'Hair restoration, dental aesthetics, Botox, fillers, laser treatments, weight loss, and home healthcare services in Jordan.',
+    images: ['/og-image.jpg'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 };
 
