@@ -61,6 +61,7 @@ export default function PromoSection() {
               <h3 className="text-2xl font-semibold text-[#EFE37A] mb-2">{item.title}</h3>
               <p className="text-md text-neutral-200 mb-4">{item.subtitle}</p>
               <a
+              alt="whatsapp"
                 href={`https://wa.me/962${item.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"

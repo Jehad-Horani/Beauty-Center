@@ -69,13 +69,13 @@ export default function Footer() {
           <a href="tel:+962797043538" className="text-sm">📞 +962 7 9704 3538</a>
 
                 <div className="flex space-x-6 pt-10 rtl:space-x-reverse text-2xl">
-            <a href="https://www.instagram.com/umaima_medical_center?igsh=bHlvY2N2dzF4cnV5" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition">
+            <a href="https://www.instagram.com/umaima_medical_center?igsh=bHlvY2N2dzF4cnV5" target="_blank" rel="noopener noreferrer" alt="insta" className="hover:text-pink-500 transition">
               <FaInstagram />
             </a>
-            <a href="https://www.facebook.com/share/19neRGfzbA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+            <a href="https://www.facebook.com/share/19neRGfzbA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" alt="facebook" className="hover:text-blue-500 transition">
               <FaFacebook />
             </a>
-            <a href="https://wa.me/962797043538" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition">
+            <a href="https://wa.me/962797043538" target="_blank" rel="noopener noreferrer" alt="whatsapp" className="hover:text-green-500 transition">
               <FaWhatsapp />
             </a>
           </div>

@@ -57,6 +57,7 @@ export default function ContactSection() {
                 {/* Map */}
                 <div data-aos="fade-left">
                     <iframe
+                    title="location"
                         className="w-full h-80 rounded-xl border-4 border-[#D89F43]/40 shadow-lg"
                         loading="lazy"
                         allowFullScreen
