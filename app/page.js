@@ -19,17 +19,17 @@ export default function Home() {
 <>
     <Head>
         <title>
-          Umayma Medical Center | Hair Transplant, Dental Implants, Botox &
+          Umaima Medical Center | Hair Transplant, Dental Implants, Botox &
           Fillers in Jordan - Website by Jehad Horani
         </title>
 
         <meta
           name="description"
-          content="Umayma Medical Center in Amman, Jordan offers hair transplant, dental aesthetics, Botox, fillers, Hollywood Smile, skin rejuvenation, laser treatments,Dr. Suhaib Al-Samadi, and more. Website developed by Jehad Horani."
+          content="Umaima Medical Center in Amman, Jordan offers hair transplant, dental aesthetics, Botox, fillers, Hollywood Smile, skin rejuvenation, laser treatments,Dr. Suhaib Al-Samadi, and more. Website developed by Jehad Horani."
         />
         <meta
           name="keywords"
-          content="Umayma Medical Center, Hair Transplant Jordan, Dr. Suhaib Al-Samadi, Dental Implants Jordan, Botox Jordan, Fillers Jordan, Hollywood Smile Jordan, Skin Care Amman, Best Hair Transplant in Jordan, Aesthetic Clinic Amman, Jehad Horani Web Developer"
+          content="Umaima Medical Center, Hair Transplant Jordan, Dr. Suhaib Al-Samadi, Dental Implants Jordan, Botox Jordan, Fillers Jordan, Hollywood Smile Jordan, Skin Care Amman, Best Hair Transplant in Jordan, Aesthetic Clinic Amman, Jehad Horani Web Developer"
         />
 
         <meta
@@ -43,7 +43,7 @@ export default function Home() {
 
         <meta
           property="og:title"
-          content="Umayma Medical Center | Trusted Hair Transplant & Dental Care in Jordan"
+          content="Umaima Medical Center | Trusted Hair Transplant & Dental Care in Jordan"
         />
         <meta
           property="og:description"
@@ -56,7 +56,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Umayma Medical Center | Hair Transplant, Botox & Dental Care - Website by Jehad Horani"
+          content="Umaima Medical Center | Hair Transplant, Botox & Dental Care - Website by Jehad Horani"
         />
         <meta
           name="twitter:description"
@@ -73,11 +73,11 @@ export default function Home() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
-            name: "Umayma Medical Center",
+            name: "Umaima Medical Center",
             url: "https://your-website-url.com",
             image: "https://your-website-url.com/og-image.jpg",
             description:
-              "Umayma Medical Center in Amman, Jordan offers advanced hair transplant, dental implants, Botox, fillers, Hollywood Smile, and skin treatments. Website developed by Jehad Horani.",
+              "Umaima Medical Center in Amman, Jordan offers advanced hair transplant, dental implants, Botox, fillers, Hollywood Smile, and skin treatments. Website developed by Jehad Horani.",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Amman, Jordan",

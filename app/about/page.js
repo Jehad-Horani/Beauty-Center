@@ -23,13 +23,13 @@ export default function AboutPage() {
           data-aos="fade-down"
           className="text-5xl md:text-6xl font-extrabold tracking-wide text-[#EFE37A] mb-6"
         >
-          About Umayma Medical Center
+          About Umaima Medical Center
         </h1>
         <p
           data-aos="fade-up"
           className="max-w-3xl mx-auto text-gray-300 text-lg md:text-xl leading-relaxed"
         >
-          For over 7 years, Umayma Medical Center has been a trusted destination
+          For over 7 years, Umaima Medical Center has been a trusted destination
           for advanced medical and aesthetic care. Founded and led by{" "}
           <span className="text-[#D89F43] font-semibold">Dr. Suhaib Al-Samadi</span>,
           a former orthopedic surgeon and MOH surgical resident in Jordan, our
@@ -48,7 +48,7 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-            At Umayma Medical Center, our mission is to deliver top-quality
+            At Umaima Medical Center, our mission is to deliver top-quality
             healthcare and aesthetic treatments while ensuring the trust, comfort,
             and satisfaction of every patient. We provide specialized services in
             general medicine, dental care, advanced cosmetic procedures, and
@@ -235,7 +235,7 @@ export default function AboutPage() {
             {
               name: "Fatima Al-Masri",
               feedback:
-                "The staff at Umayma Medical Center made me feel so comfortable. My skin has never looked better!",
+                "The staff at Umaima Medical Center made me feel so comfortable. My skin has never looked better!",
               rating: 5,
             },
             {

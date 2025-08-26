@@ -35,7 +35,7 @@ export default function Hero() {
             data-aos="zoom-in"
             className="text-gray-300 tracking-wide text-lg md:text-xl max-w-lg"
           >
-            At Umayma Medical Center, we provide expert cosmetic treatments
+            At Umaima Medical Center, we provide expert cosmetic treatments
             tailored to your needs in a luxurious and professional environment.
           </p>
           <button

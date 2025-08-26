@@ -28,7 +28,7 @@ export default function AboutIntro() {
                     data-aos-delay="200"
                     className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
                 >
-                    At Umayma Medical Center, we blend modern aesthetic techniques with a touch of elegance to bring out the best version of you. Your beauty journey begins here.
+                    At Umaima Medical Center, we blend modern aesthetic techniques with a touch of elegance to bring out the best version of you. Your beauty journey begins here.
                 </p>
                 <p className=" sr-only">في مركز أميمة الطبي، نمزج تقنيات التجميل الحديثة مع لمسة من الأناقة لنُظهركِ بأفضل صورة. رحلة جمالكِ تبدأ من هنا.</p>
                 <div data-aos="fade-up" data-aos-delay="400">

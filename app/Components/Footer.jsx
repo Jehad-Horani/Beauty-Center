@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Logo and Description */}
         <div>
           <h2 className="text-2xl font-bold text-[#EFE37A] mb-3">
-            Umayma Medical Center
+            Umaima Medical Center
           </h2>
           <p className="text-sm text-gray-400 leading-relaxed">
             Enhancing your natural beauty with advanced aesthetic treatments
