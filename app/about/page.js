@@ -181,13 +181,13 @@ export default function AboutPage() {
               name: "Dr. Ashraf Al-Baoul",
               role: "Anesthesia Resident",
               img: "/ashraf.png",
-              bio: "Specialized in anesthesia to ensure patient comfort and safety.",
+              bio: "He is extensively trained in advanced anesthesia techniques, pain management protocols, and patient monitoring systems, enabling him to deliver precise, personalized anesthesia plans tailored to each patient’s medical condition and procedure type.",
             },
             {
               name: "Dr. Abdul Rahman Hashem",
               role: "Dentist",
               img: "/abed.png",
-              bio: "Providing comprehensive dental care for healthy, confident smiles.",
+              bio: "committed to utilizing modern dental technologies, evidence-based techniques, and patient-centered care to ensure exceptional comfort, precision, and long-term results. His approach combines clinical excellence with aesthetic attention to detail, empowering patients to achieve optimal oral health and a smile they can trust with confidence..",
             },
        
             {
