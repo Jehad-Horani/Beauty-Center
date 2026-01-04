@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#1f1410] text-gray-300 py-10 border-t border-[#D89F43]/30">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        
+
         {/* Logo and Description */}
         <div>
           <h2 className="text-2xl font-bold text-[#EFE37A] mb-3">
@@ -68,7 +68,7 @@ export default function Footer() {
           <p className="text-sm">📍 Amman, Jordan</p>
           <a href="tel:+962797043538" className="text-sm">📞 +962 7 9704 3538</a>
 
-                <div className="flex space-x-6 pt-10 rtl:space-x-reverse text-2xl">
+          <div className="flex space-x-6 pt-10 rtl:space-x-reverse text-2xl">
             <a href="https://www.instagram.com/umaima_medical_center?igsh=bHlvY2N2dzF4cnV5" target="_blank" rel="noopener noreferrer" alt="insta" className="hover:text-pink-500 transition">
               <FaInstagram />
             </a>
@@ -84,8 +84,10 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-center text-sm text-gray-500 mt-8 border-t border-[#D89F43]/20 pt-4">
-        © {new Date().getFullYear()} JHWebDev. All rights reserved.
-      </div>
+        <a href="https://jehadh-portfolio.vercel.app/">
+
+          © {new Date().getFullYear()} JHWebDev. All rights reserved.
+        </a>      </div>
     </footer>
   );
 }

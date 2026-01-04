@@ -53,18 +53,20 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
-        <WhatsappButton/>
+        <Footer />
+        <WhatsappButton />
         <Analytics />
       </body>
+      <ClinicSchema clinic={clinicData} id="umaima-clinic-schema" />
+       
     </html>
   );
 }

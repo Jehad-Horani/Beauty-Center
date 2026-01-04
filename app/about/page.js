@@ -168,13 +168,14 @@ export default function AboutPage() {
               name: "Dr. Mohammed Al-Samadi",
               role: "General and Plastic Surgeon",
               img: "/moh.png",
-              bio: "Expert in both general and plastic surgery to enhance patient care.",
+              bio: "Aesthetic Physician | Injectables & Minimally Invasive Specialist ​Dr. Mohammad Al Smadi is a highly specialized physician in the field of Aesthetic Medicine. He graduated with Distinction from Kharkiv University in 2013. With 8 years of focused experience, Dr. Al Smadi is an expert in aesthetic injections and minimally invasive cosmetic procedures, dedicated to enhancing natural beauty through precise, non-surgical techniques.",
+
             },
             {
               name: "Dr. Suhaib Al-Samadi",
               role: "Orthopedic and General Surgeon",
               img: "/suhaip.png",
-              bio: "Experienced in orthopedic and general surgical procedures.",
+              bio: "Hair Restoration Surgeon | European Board Certified ​Dr. Suhaib Al Smadi is a distinguished surgeon specializing in hair restoration. He earned his medical degree from Mutah University in 2014, establishing a strong academic foundation. He further honed his surgical precision through extensive service in General Surgery at the Ministry of Health (MOH). Dr. Al Smadi is certified by the prestigious European Board of Hair Restoration Surgery, combining rigorous surgical standards with aesthetic artistry to deliver natural, world-class results",
             },
             {
               name: "Dr. Ashraf Al-Baoul",
