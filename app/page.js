@@ -205,7 +205,6 @@ export default function Home() {
         <AboutIntroSection />
         <ContactSection />
       </main>
-      <ClinicSchema clinic={clinicData} id="umaima-clinic-schema-home-page" />
 
     </>
   );

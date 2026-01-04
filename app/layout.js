@@ -65,7 +65,6 @@ export default function RootLayout({ children }) {
         <WhatsappButton />
         <Analytics />
       </body>
-      <ClinicSchema clinic={clinicData} id="umaima-clinic-schema" />
        
     </html>
   );
